@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 import {
   BlogCard,
@@ -12,16 +12,16 @@ import {
   TitleContent,
   UtilityList,
   Img,
-} from "./ProjectsStyles";
+} from './ProjectsStyles';
 import {
   Section,
   SectionDivider,
   SectionTitle,
-} from "../../styles/GlobalComponents";
-import { projects } from "../../constants/constants";
+} from '../../styles/GlobalComponents';
+import { projects } from '../../constants/constants';
 
 const Projects = () => (
-  <Section nopadding id="projects">
+  <Section nopadding id='projects'>
     <SectionDivider />
     <SectionTitle main>Projects</SectionTitle>
     <GridContainer>
@@ -33,7 +33,7 @@ const Projects = () => (
               <HeaderThree title>{p.title}</HeaderThree>
               <Hr />
             </TitleContent>
-            <CardInfo className="card-info">{p.description}</CardInfo>
+            <CardInfo className='card-info'>{p.description}</CardInfo>
             <div>
               <TitleContent>Stack</TitleContent>
               <TagList>
@@ -43,15 +43,19 @@ const Projects = () => (
               </TagList>
             </div>
             <UtilityList>
-              <ExternalLinks href={p.visit}>Code</ExternalLinks>
-              <ExternalLinks href={p.source}>Source</ExternalLinks>
+              <ExternalLinks target={'_blank'} href={p.visit}>
+                View
+              </ExternalLinks>
+              <ExternalLinks target={'_blank'} href={p.source}>
+                Source
+              </ExternalLinks>
             </UtilityList>
           </BlogCard>
         );
       })}
     </GridContainer>
     <UtilityList>
-      <ExternalLinks href="https://github.com/immanish8521" target="_blank">
+      <ExternalLinks href='https://github.com/immanish8521' target='_blank'>
         More on Github
       </ExternalLinks>
     </UtilityList>
