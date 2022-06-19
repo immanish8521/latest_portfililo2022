@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
 import {
   Section,
   SectionText,
   SectionTitle,
-} from "../../styles/GlobalComponents";
-import Button from "../../styles/GlobalComponents/Button";
-import { LeftSection } from "./HeroStyles";
+} from '../../styles/GlobalComponents';
+import Button from '../../styles/GlobalComponents/Button';
+import { LeftSection } from './HeroStyles';
 
 const Hero = (props) => (
   <>
@@ -22,7 +22,11 @@ const Hero = (props) => (
           knowledge.
         </SectionText>
 
-        <a style={{ color: "white" }} href="../images/1.png" target="_blank">
+        <a
+          style={{ color: 'white' }}
+          href='../images/Resume.pdf'
+          target='_blank'
+        >
           <Button>Resume</Button>
         </a>
       </LeftSection>
